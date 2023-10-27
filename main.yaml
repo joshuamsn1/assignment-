@@ -5,8 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        env:
-          MY_SECRET: ${{ secrets.hello-world }}
-        run: |
-          echo "Hello World!"
-          echo "The secret value is $MY_SECRET"
+        run: echo "Hello World!"
